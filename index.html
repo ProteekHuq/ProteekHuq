@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteek Huq - Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Add this CSS to style your headshot and intro section */
+        #intro {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            margin: 20px 0; /* Add margin around the section */
+            justify-content: flex-start; /* Align items to the left */
+        }
+
+        #intro img {
+            width: 150px; /* Set the width of the headshot */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make the image circular */
+            margin-right: 20px; /* Add space between the image and text */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin */
+            text-align: left; /* Align text to the left */
+        }
+
+        p {
+            margin: 5px 0 0; /* Add some spacing above the paragraph */
+            text-align: left; /* Align paragraph text to the left */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Proteek Huq Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <img src="images/headshot.jpeg" alt="Proteek Huq Headshot"> <!-- Add your headshot image here -->
+            <div>
+                <h1>Proteek Huq</h1>
+                <p>Hi, my name is Proteek, and this is my personal website.
+                    You can use this website to get to know more about me, look over my university / extracurricular projects, art gallery, and my blog. </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Reach out to Proteek!</h2>
+            <form action="https://formspree.io/f/mwpkevoj" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Think Tank Competition</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Global body styling */
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0; /* Reset default body margin */
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling with logo and navigation */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            margin-bottom: 20px; /* Add margin below the header */
+        }
+
+        /* Navigation styling */
+        nav ul {
+            display: flex;  /* Display menu items in a row */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex: 1;  /* Ensure nav items expand */
+            justify-content: space-evenly;  /* Space out items evenly */
+        }
+
+        nav ul li {
+            margin: 0 10px;  /* Add spacing between items */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Logo styling */
+        .logo img {
+            height: 50px;
+            width: auto;
+            display: inline-block;
+        }
+
+        /* Main content styling */
+        main {
+            margin: 20px auto; /* Add margin to main content */
+            max-width: 1200px; /* Center main content */
+        }
+
+        /* Article styling */
+        article {
+            margin-bottom: 30px; /* Add margin below each article */
+            padding: 20px; /* Add padding for inner spacing */
+            background-color: white; /* Optional: to enhance visibility */
+            border-radius: 8px; /* Optional: add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+        }
+
+        h1, h2 {
+            color: #444;
+            text-align: center;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px; /* Add margin above the footer */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: row;  /* Keep header items in a row */
+                flex-wrap: wrap;      /* Allow items to wrap instead of stacking */
+                justify-content: center;  /* Center items */
+            }
+
+            nav ul {
+                flex-direction: row;  /* Keep items in a row */
+                justify-content: center; /* Center the nav items */
+                overflow-x: auto;     /* Allow horizontal scrolling if necessary */
+                white-space: nowrap;  /* Prevent items from wrapping to the next line */
+            }
+
+            nav ul li {
+                margin: 0 10px;  /* Keep the same margin */
+            }
+
+            /* Ensure logo is centered on smaller screens */
+            .logo img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Proteek Huq Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>AI Think Tank Competition</h2>
+            <p><strong>Competition:</strong> UNSW AI Think Tank</p>
+            <p><strong>Project Focus:</strong> Cybersecurity, AI Solutions</p>
+            <p><strong>Role:</strong> Contributed as a Solutions Architect in collaboration with Sarah Lim and Tianyi Angela Lin</p>
+            <p><strong>Outcome:</strong> 1st Place</p>
+            <p>
+                I had the pleasure of presenting in the finalist round of the Artificial Intelligence Think Tank Case Competition,
+                organized by UNSW Capital W, UNSW Digital Society, and UNSW Women in Technology. 
+                I am proud to share that, in partnership with Sarah Lim and Tianyi Angela Lin, our team achieved 
+                <strong>First Place</strong> for our project: <em>Cyber Central</em>.
+            </p>
+            <p>
+                Cyber Central is a centralised cybersecurity attack simulator and training platform that leverages generative AI
+                to dispatch auto-generated and customizable phishing simulations. This solution enhances employee awareness and
+                resilience against phishing and malware attacks. 
+                It was a fantastic opportunity to apply academic knowledge and collaborate with like-minded individuals who share 
+                my passion for Artificial Intelligence and Cybersecurity.
+            </p>
+            
+            <h3>Project Highlights:</h3>
+            <ul>
+                <li>Won first place at the UNSW AI Think Tank Case Competition</li>
+                <li>Developed Cyber Central, a platform that provides realistic phishing simulations using AI</li>
+                <li>Contributed as a Solutions Architect in collaboration with Sarah Lim and Tianyi Angela Lin to present this innovative solution</li>
+            </ul>
+        
+            <h3>Screenshots of the Cyber Central Prototype:</h3>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="prototype1.jpg" alt="Cyber Central Prototype Screenshot 1" width="500" height="300">
+                </div>
+                <div class="gallery-item">
+                    <img src="prototype2.jpg" alt="Cyber Central Prototype Screenshot 2" width="500" height="300">
+                </div>
+                <div class="gallery-item">
+                    <img src="prototype3.jpg" alt="Cyber Central Prototype Screenshot 3" width="500" height="300">
+                </div>
+                <div class="gallery-item">
+                    <img src="prototype4.jpg" alt="Cyber Central Prototype Screenshot 4" width="500" height="300">
+                </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

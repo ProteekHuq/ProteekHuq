@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteek Huq - Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Gallery Section Styles */
+        #gallery {
+            padding: 20px; /* Add padding around the gallery */
+        }
+
+        #gallery h2 {
+            text-align: left; /* Align the title to the left */
+            margin-bottom: 20px; /* Space below the title */
+        }
+
+        .gallery-container {
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+            grid-auto-rows: 150px; /* Set a base height for rows */
+            gap: 15px; /* Space between items */
+        }
+
+        .gallery-item {
+            position: relative; /* Position relative for caption placement */
+            overflow: hidden; /* Hide overflow for image scaling */
+            border-radius: 8px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+        }
+
+        .gallery-item img {
+            width: 100%; /* Full width for responsiveness */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the area without distortion */
+            transition: transform 0.3s; /* Smooth scaling */
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05); /* Scale image on hover */
+        }
+
+        .desc {
+            padding: 10px; /* Padding for description */
+            text-align: center; /* Center the description */
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            position: absolute; /* Position over the image */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left */
+            width: 100%; /* Full width */
+        }
+
+        /* Define specific sizes for each item */
+        .item1 {
+            grid-column: span 2; /* Span 2 columns */
+            grid-row: span 2; /* Span 2 rows */
+        }
+
+        .item2 {
+            grid-column: span 1; /* Span 1 column */
+            grid-row: span 1; /* Span 1 row */
+        }
+
+        .item3 {
+            grid-column: span 1; /* Span 1 column */
+            grid-row: span 2; /* Span 2 rows */
+        }
+
+        .item4 {
+            grid-column: span 1; /* Span 1 column */
+            grid-row: span 1; /* Span 1 row */
+        }
+
+        .item5 {
+            grid-column: span 2; /* Span 2 columns */
+            grid-row: span 1; /* Span 1 row */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Proteek Huq Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <h2>Proteek's Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item item1">
+                    <a target="_blank" href="images/img1.jpg">
+                        <img src="images/img1.jpg" alt="Still Life Photograph">
+                    </a>
+                    <div class="desc">Still Life Photograph</div>
+                </div>
+                <div class="gallery-item item2">
+                    <a target="_blank" href="images/img2.jpg">
+                        <img src="images/img2.jpg" alt="Still Life Painting - Acrylic on Canvas">
+                    </a>
+                    <div class="desc">Still Life Painting - Acrylic on Canvas</div>
+                </div>
+                
+                <div class="gallery-item item3">
+                    <video controls onclick="this.requestFullscreen();" width="100%">
+                        <source src="images/gilbert.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="desc">Stop Motion Video of my Goldfish</div>
+                </div>
+                
+                <div class="gallery-item item4">
+                    <a target="_blank" href="images/img5.jpg">
+                        <img src="images/img5.jpg" alt="Train Interior - White Charcoal on Black Paper">
+                    </a>
+                    <div class="desc">Train Interior - White Charcoal on Black Paper</div>
+                </div>
+                <div class="gallery-item item5">
+                    <a target="_blank" href="images/img3.JPG">
+                        <img src="images/img3.JPG" alt="Graphite Drawing">
+                    </a>
+                    <div class="desc">Graphite Drawing</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
