@@ -80,6 +80,24 @@
             text-align: center;
         }
 
+        /* Gallery styles */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows images to wrap */
+            justify-content: center; /* Center images */
+        }
+
+        .gallery-item {
+            margin: 10px; /* Space between images */
+        }
+
+        .gallery-item img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional: add rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+        }
+
         /* Footer styling */
         footer {
             text-align: center;
@@ -87,25 +105,6 @@
             background-color: #333;
             color: white;
             margin-top: 20px; /* Add margin above the footer */
-        }
-
-        /* Gallery styles */
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap; /* Allows items to wrap to the next line */
-            justify-content: center; /* Center items in the container */
-        }
-
-        .gallery-item {
-            margin: 10px; /* Space between items */
-            flex: 1 1 300px; /* Responsive flex basis: allows item to grow and shrink */
-        }
-
-        .responsive-image {
-            width: 100%; /* Make image take full width of the container */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Optional: rounded corners for images */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for images */
         }
 
         /* Mobile responsiveness */
@@ -130,26 +129,23 @@
                 margin: 10px; /* Reduced margin */
                 padding: 0 10px; /* Less padding on mobile */
             }
-
-            .gallery-item {
-                flex: 1 1 100%; /* Stack items vertically on smaller screens */
-            }
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a> <!-- Logo links to index -->
+                <img src="logo.png" alt="Proteek Huq Logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -172,3 +168,38 @@
                 Cyber Central is a centralised cybersecurity attack simulator and training platform that leverages generative AI
                 to dispatch auto-generated and customizable phishing simulations. This solution enhances employee awareness and
                 resilience against phishing and malware attacks. 
+                It was a fantastic opportunity to apply academic knowledge and collaborate with like-minded individuals who share 
+                my passion for Artificial Intelligence and Cybersecurity.
+            </p>
+            
+            <h3>Project Highlights:</h3>
+            <ul>
+                <li>Won first place at the UNSW AI Think Tank Case Competition</li>
+                <li>Developed Cyber Central, a platform that provides realistic phishing simulations using AI</li>
+                <li>Contributed as a Solutions Architect in collaboration with Sarah Lim and Tianyi Angela Lin to present this innovative solution</li>
+            </ul>
+        
+            <h3>Screenshots of the Cyber Central Prototype:</h3>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="prototype1.jpg" alt="Cyber Central Prototype Screenshot 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="prototype2.jpg" alt="Cyber Central Prototype Screenshot 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="prototype3.jpg" alt="Cyber Central Prototype Screenshot 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="prototype4.jpg" alt="Cyber Central Prototype Screenshot 4">
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
