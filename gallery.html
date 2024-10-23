@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,62 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
     <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            width: 100%;
+            background-color: #333; /* Background color for visibility */
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 40px; /* Adjusted height for the logo */
+            width: auto;
+        }
+
+        nav {
+            flex: 1;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between; /* Space out items */
+        }
+
+        nav ul li {
+            margin: 0 5px; /* Reduced margin for better fit */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px; /* Smaller font size for better fit on mobile */
+        }
+
         /* Gallery Section Styles */
         #gallery {
             padding: 20px; /* Add padding around the gallery */
+            max-width: 1200px; /* Restrict max width for better readability */
+            margin: auto; /* Center gallery */
         }
 
         #gallery h2 {
@@ -30,11 +83,12 @@
         .gallery-item {
             position: relative; /* Position relative for caption placement */
             overflow: hidden; /* Hide overflow for image scaling */
-            border-radius: 8px; /* Optional: Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
         }
 
-        .gallery-item img {
+        .gallery-item img,
+        .gallery-item video {
             width: 100%; /* Full width for responsiveness */
             height: auto; /* Maintain aspect ratio */
             object-fit: cover; /* Cover the area without distortion */
@@ -55,35 +109,48 @@
             width: 100%; /* Full width */
         }
 
-        /* Define specific sizes for each item */
-        .item1 {
-            grid-column: span 2; /* Span 2 columns */
-            grid-row: span 2; /* Span 2 rows */
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
         }
 
-        .item2 {
-            grid-column: span 1; /* Span 1 column */
-            grid-row: span 1; /* Span 1 row */
-        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo img {
+                height: 30px; /* Smaller logo on mobile */
+            }
 
-        .item3 {
-            grid-column: span 1; /* Span 1 column */
-            grid-row: span 2; /* Span 2 rows */
-        }
+            nav ul {
+                justify-content: space-around; /* Evenly distribute items */
+            }
 
-        .item4 {
-            grid-column: span 1; /* Span 1 column */
-            grid-row: span 1; /* Span 1 row */
-        }
+            nav ul li {
+                margin: 0 3px; /* Reduced margin */
+            }
 
-        .item5 {
-            grid-column: span 2; /* Span 2 columns */
-            grid-row: span 1; /* Span 1 row */
+            nav ul li a {
+                font-size: 12px; /* Smaller font size on mobile */
+            }
+
+            #gallery {
+                padding: 15px; /* Smaller padding on mobile */
+            }
+
+            #gallery h2 {
+                font-size: 18px; /* Smaller heading size on mobile */
+            }
+
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+            }
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <div class="header-container">
             <div class="logo">
@@ -117,7 +184,7 @@
                     </a>
                     <div class="desc">Still Life Painting - Acrylic on Canvas</div>
                 </div>
-                
+
                 <div class="gallery-item item3">
                     <video controls onclick="this.requestFullscreen();" width="100%">
                         <source src="images/gilbert.mov" type="video/mp4">
@@ -125,7 +192,7 @@
                     </video>
                     <div class="desc">Stop Motion Video of my Goldfish</div>
                 </div>
-                
+
                 <div class="gallery-item item4">
                     <a target="_blank" href="images/img5.jpg">
                         <img src="images/img5.jpg" alt="Train Interior - White Charcoal on Black Paper">
@@ -145,6 +212,6 @@
     <footer>
         <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
