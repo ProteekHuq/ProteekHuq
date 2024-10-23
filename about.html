@@ -10,52 +10,139 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
-        /* Add this CSS to style the about section */
+        /* Global body styling */
         body {
-            font-family: 'Arial', sans-serif; /* Add a pleasant font */
-            background-color: #f9f9f9; /* Light background color */
-            color: #333; /* Dark text color */
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
 
+        /* Header styling */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .logo img {
+            width: 80px; /* Smaller width for logo */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* About section styling */
         #about {
-            display: flex; /* Use flexbox for layout */
-            align-items: flex-start; /* Align items to the top */
-            margin: 20px; /* Add margin around the section */
-            padding: 20px; /* Add padding for better spacing */
-            background-color: #ffffff; /* White background for the section */
-            border-radius: 8px; /* Optional: add rounded corners */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            align-items: flex-start;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         #about img {
-            width: 200px; /* Set the width of the image */
-            height: 240px; /* Set the height of the image */
-            border-radius: 8px; /* Optional: Add rounded corners */
-            margin-right: 20px; /* Add space between the image and text */
+            width: 100%; /* Responsive image size */
+            max-width: 270px; /* Set maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         #about div {
-            max-width: 600px; /* Limit the width of the text */
+            flex: 1; /* Let text take up remaining space */
+            max-width: 600px;
+            margin-left: 20px;
         }
 
         #about h2 {
-            text-align: left; /* Align the title to the left */
-            margin: 0 0 10px; /* Add bottom margin for spacing */
-            font-size: 24px; /* Increase heading size */
-        
+            text-align: left;
+            margin: 0 0 10px;
+            font-size: 24px;
         }
 
         #about p {
-            line-height: 1.6; /* Increase line height for readability */
-            margin: 5px 0; /* Add margin for spacing between paragraphs */
+            line-height: 1.6;
+            margin: 5px 0;
         }
 
+        /* Footer styling */
         footer {
-            text-align: center; /* Center the footer text */
-            margin: 20px 0; /* Add margin around the footer */
-            padding: 10px; /* Add padding for better spacing */
-            background-color: #ffffff; /* White background for the footer */
-            border-radius: 8px; /* Optional: add rounded corners */
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            /* Header adjustments */
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: row; /* Keep nav items in a row */
+                justify-content: center;
+                flex-wrap: wrap; /* Allow wrapping */
+            }
+
+            nav ul li {
+                margin: 10px; /* Add spacing for smaller screens */
+            }
+
+            /* About section on mobile */
+            #about {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center;
+                text-align: center;
+            }
+
+            #about div {
+                margin-left: 0; /* Remove margin for text */
+            }
+
+            #about img {
+                max-width: 100%; /* Ensure the image scales properly */
+                margin-bottom: 20px;
+            }
+
+            #about h2 {
+                font-size: 22px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -64,7 +151,9 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Proteek Huq Logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Proteek Huq Logo">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -87,14 +176,11 @@
                 <p><strong>Age:</strong> 20 years old</p>
                 <p><strong>Location:</strong> Sydney, Australia</p>
                 <p><strong>Hobbies:</strong> Hiking, Playing Minecraft, Travelling, Camping, Running, Art</p>
-                <p><strong>Education:</strong> <br> <strong> <u>University of New South Wales </u> </strong> <br> Bachelor's of Commerce (Marketing) and Information Systems</p>
-                <p><strong>Experience:</strong> 
-                    <br> <strong> <u>Flight Centre Travel Group (FCTG) </u> </strong> 
-                    <br> Marketing Intern <i>(Feb 2024 - Apr 2024)</i>
-                    <br> <strong> <u>Bridgeclimb Sydney</u> </strong> 
-                    <br> Receptionist <i>(Dec 2023 - present)</i>
-                    <br> <strong> <u>Rec Alley Gymnastics Centre</u> </strong> 
-                    <br> Receptionist <i>(Oct 2022 - Oct 2023)</i>
+                <p><strong>Education:</strong> <br> <strong><u>University of New South Wales</u></strong><br>Bachelor's of Commerce (Marketing) and Information Systems</p>
+                <p><strong>Experience:</strong><br>
+                    <strong><u>Flight Centre Travel Group (FCTG)</u></strong><br>Marketing Intern (Feb 2024 - Apr 2024)<br>
+                    <strong><u>Bridgeclimb Sydney</u></strong><br>Receptionist (Dec 2023 - present)<br>
+                    <strong><u>Rec Alley Gymnastics Centre</u></strong><br>Receptionist (Oct 2022 - Oct 2023)
                 </p>
             </div>
         </section>
