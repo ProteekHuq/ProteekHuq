@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
-        /* Global body styling */
+        /* Global styles */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f9f9f9;
@@ -20,18 +20,26 @@
             padding: 0;
         }
 
-        /* Header styling */
+        /* Header styles */
+        header {
+            width: 100%;
+        }
+
         .header-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #333;
             padding: 10px 20px;
+            background-color: #333;
         }
 
         .logo img {
-            height: 50px;
+            height: 40px; /* Adjusted height for the logo */
             width: auto;
+        }
+
+        nav {
+            flex: 1;
         }
 
         nav ul {
@@ -39,71 +47,83 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            justify-content: flex-end;
-            flex-wrap: nowrap;
+            justify-content: space-between; /* Space out items */
         }
 
         nav ul li {
-            margin: 0 10px;
+            margin: 0 5px; /* Reduced margin for better fit */
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 14px; /* Smaller font size for better fit on mobile */
         }
 
-        /* Main content styling */
+        /* Main content styles */
         main {
-            margin: 40px auto;
-            max-width: 800px;
+            margin: 20px;
+            max-width: 800px; /* Restrict width for better readability */
+            padding: 0 20px; /* Padding to ensure content isn't against the edges */
         }
 
-        #about {
+        section {
+            background-color: white;
             padding: 20px;
-            background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        #about h2 {
-            text-align: left;
-            margin-bottom: 10px;
+        h2 {
+            text-align: left; /* Align heading to the left */
             font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        #about p {
+        p {
             line-height: 1.6;
             margin: 5px 0;
-            text-align: left;
         }
 
-        /* Footer styling */
+        /* Footer styles */
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-            margin-top: 20px;
         }
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
+            .logo img {
+                height: 30px; /* Smaller logo on mobile */
+            }
+
             nav ul {
-                justify-content: space-between;
-                overflow-x: auto;
-                white-space: nowrap;
+                justify-content: space-around; /* Evenly distribute items */
+            }
+
+            nav ul li {
+                margin: 0 3px; /* Reduced margin */
+            }
+
+            nav ul li a {
+                font-size: 12px; /* Smaller font size on mobile */
+            }
+
+            main {
+                margin: 10px; /* Reduced margin */
+                padding: 0 10px; /* Less padding on mobile */
             }
         }
     </style>
 </head>
 
 <body>
-
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a>
+                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a> <!-- Logo links to index -->
             </div>
             <nav>
                 <ul>
@@ -119,26 +139,26 @@
 
     <main>
         <section id="about">
-            <div>
-                <h2>About Me</h2>
-                <p><strong>Name:</strong> Proteek Huq</p>
-                <p><strong>Age:</strong> 20 years old</p>
-                <p><strong>Location:</strong> Sydney, Australia</p>
-                <p><strong>Hobbies:</strong> Hiking, Playing Minecraft, Travelling, Camping, Running, Art</p>
-                <p><strong>Education:</strong> <br> <strong><u>University of New South Wales</u></strong> <br> Bachelor's of Commerce (Marketing) and Information Systems</p>
-                <p><strong>Experience:</strong>
-                    <br> <strong><u>Flight Centre Travel Group (FCTG)</u></strong> <br> Marketing Intern <i>(Feb 2024 - Apr 2024)</i>
-                    <br> <strong><u>Bridgeclimb Sydney</u></strong> <br> Receptionist <i>(Dec 2023 - present)</i>
-                    <br> <strong><u>Rec Alley Gymnastics Centre</u></strong> <br> Receptionist <i>(Oct 2022 - Oct 2023)</i>
-                </p>
-            </div>
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Proteek Huq</p>
+            <p><strong>Age:</strong> 20 years old</p>
+            <p><strong>Location:</strong> Sydney, Australia</p>
+            <p><strong>Hobbies:</strong> Hiking, Playing Minecraft, Travelling, Camping, Running, Art</p>
+            <p><strong>Education:</strong> <br> <strong><u>University of New South Wales</u></strong> <br> Bachelor's of Commerce (Marketing) and Information Systems</p>
+            <p><strong>Experience:</strong>
+                <br> <strong><u>Flight Centre Travel Group (FCTG)</u></strong>
+                <br> Marketing Intern <i>(Feb 2024 - Apr 2024)</i>
+                <br> <strong><u>Bridgeclimb Sydney</u></strong>
+                <br> Receptionist <i>(Dec 2023 - present)</i>
+                <br> <strong><u>Rec Alley Gymnastics Centre</u></strong>
+                <br> Receptionist <i>(Oct 2022 - Oct 2023)</i>
+            </p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
