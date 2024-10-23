@@ -42,6 +42,7 @@
 
         nav {
             flex: 1;
+            text-align: right; /* Align the nav items to the right */
         }
 
         nav ul {
@@ -49,11 +50,11 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            justify-content: space-between; /* Space out items */
+            justify-content: flex-end; /* Align items to the right */
         }
 
         nav ul li {
-            margin: 0 5px; /* Reduced margin for better fit */
+            margin: 0 10px; /* Adjusted margin for better spacing */
         }
 
         nav ul li a {
@@ -111,7 +112,8 @@
             flex-direction: column; /* Stack form elements vertically */
         }
 
-        form input, form textarea {
+        form input,
+        form textarea {
             margin: 10px 0; /* Add margin to form elements */
             padding: 10px; /* Padding for better usability */
             border: 1px solid #ccc;
@@ -148,11 +150,11 @@
             }
 
             nav ul {
-                justify-content: space-around; /* Evenly distribute items */
+                justify-content: space-between; /* Ensure items are spaced evenly */
             }
 
             nav ul li {
-                margin: 0 3px; /* Reduced margin */
+                margin: 0 5px; /* Reduced margin */
             }
 
             nav ul li a {
@@ -184,7 +186,6 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="blog.html">Blog</a></li>
