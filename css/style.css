@@ -14,7 +14,11 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #333;
-    padding: 15px 20px; /* More spacing for a cleaner look */
+    padding: 15px 20px;
+}
+
+.logo {
+    margin-right: auto; /* Align logo to the left */
 }
 
 nav ul {
@@ -22,12 +26,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex: 1;
-    justify-content: flex-end; /* Aligns nav items to the right */
+    justify-content: flex-end;
 }
 
 nav ul li {
-    margin: 0 15px; /* More space between nav items */
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -35,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
-    transition: color 0.3s ease; /* Smooth hover transition */
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -44,7 +47,7 @@ nav ul li a:hover {
 
 /* Logo styling */
 .logo img {
-    height: 60px; /* Increased size for better visibility */
+    height: 60px;
     width: auto;
 }
 
@@ -52,7 +55,7 @@ nav ul li a:hover {
 main {
     margin: 40px auto;
     max-width: 1100px;
-    padding: 0 20px; /* Responsive padding */
+    padding: 0 20px;
 }
 
 section {
@@ -60,14 +63,14 @@ section {
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for emphasis */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
     color: #444;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 600; /* Slightly bolder for better readability */
+    font-weight: 600;
 }
 
 /* Contact form styling */
@@ -77,12 +80,12 @@ form {
 }
 
 form input, form textarea {
-    width: 100%; /* Full width with proper padding */
+    width: 100%;
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Ensures consistent box-sizing */
+    box-sizing: border-box;
 }
 
 form button {
@@ -111,44 +114,43 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px; /* Increase padding for mobile */
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between; /* Space between logo and nav */
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Keep nav items horizontal */
         justify-content: center;
-        align-items: center;
-        margin-top: 10px; /* Add some spacing between logo and nav */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        white-space: nowrap; /* Prevent line wrapping */
     }
 
     nav ul li {
-        margin: 10px 0; /* Increase vertical spacing between nav items */
+        margin: 0 10px; /* Reduced spacing for smaller screens */
     }
 
     .logo img {
-        margin-bottom: 10px; /* Space between logo and nav */
+        margin-bottom: 0; /* Remove extra margin on mobile */
     }
 
     section {
-        padding: 15px; /* Slightly reduced padding for mobile */
+        padding: 15px;
     }
 
     h1, h2 {
-        font-size: 1.5rem; /* Adjust header size for small screens */
+        font-size: 1.5rem;
     }
 
     form input, form textarea {
-        padding: 10px; /* Adjust form input padding for mobile */
+        padding: 10px;
     }
 
     form button {
-        width: 100%; /* Full-width button for better touch experience */
+        width: 100%;
         padding: 12px;
     }
 
     footer {
-        font-size: 12px; /* Slightly smaller footer text on mobile */
+        font-size: 12px;
     }
 }
