@@ -4,28 +4,132 @@
     <meta charset="UTF-8"> <!-- Sets character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
     <title>Proteek Huq - Projects</title> <!-- Page title displayed in the browser tab -->
-    
-    <!-- Link to external CSS stylesheets -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Styles for the page -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"> <!-- Icon for Apple devices -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> <!-- 32x32 favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"> <!-- 16x16 favicon -->
-    <link rel="manifest" href="/site.webmanifest"> <!-- Manifest file for web applications -->
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Header section with logo and navigation -->
+        /* Header styles */
+        header {
+            width: 100%;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .logo img {
+            height: 40px; /* Adjusted height for the logo */
+            width: auto;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right; /* Align nav to the right */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-end; /* Align items to the right */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Adjusted margin for better spacing */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px; /* Smaller font size for better fit on mobile */
+        }
+
+        /* Main content styles */
+        main {
+            margin: 20px;
+            max-width: 800px; /* Restrict width for better readability */
+            padding: 0 20px; /* Padding to ensure content isn't against the edges */
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: left; /* Align heading to the left */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo img {
+                height: 30px; /* Smaller logo on mobile */
+            }
+
+            nav ul {
+                justify-content: space-around; /* Evenly distribute items */
+            }
+
+            nav ul li {
+                margin: 0 3px; /* Reduced margin */
+            }
+
+            nav ul li a {
+                font-size: 12px; /* Smaller font size on mobile */
+            }
+
+            main {
+                margin: 10px; /* Reduced margin */
+                padding: 0 10px; /* Less padding on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Proteek Huq Logo"> <!-- Logo image -->
+                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a> <!-- Logo links to index -->
             </div>
             <nav>
                 <ul>
-                    <!-- Navigation links to other pages -->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li> <!-- Active class for current page -->
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
