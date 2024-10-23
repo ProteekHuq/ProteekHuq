@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Think Tank Competition</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Proteek Huq - Blog</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -60,51 +61,37 @@
             font-size: 14px; /* Smaller font size for better fit on mobile */
         }
 
-        /* Main content styling */
+        /* Main content styles */
         main {
-            margin: 20px auto; /* Add margin to main content */
-            max-width: 1200px; /* Center main content */
+            margin: 20px;
+            max-width: 800px; /* Restrict width for better readability */
+            padding: 0 20px; /* Padding to ensure content isn't against the edges */
         }
 
-        /* Article styling */
-        article {
-            margin-bottom: 30px; /* Add margin below each article */
-            padding: 20px; /* Add padding for inner spacing */
-            background-color: white; /* Optional: to enhance visibility */
-            border-radius: 8px; /* Optional: add rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
-            color: #444;
-            text-align: center;
+        h2 {
+            text-align: left; /* Align heading to the left */
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        /* Gallery styles */
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap; /* Allows images to wrap */
-            justify-content: center; /* Center images */
+        p {
+            line-height: 1.6;
+            margin: 5px 0;
         }
 
-        .gallery-item {
-            margin: 10px; /* Space between images */
-        }
-
-        .gallery-item img {
-            max-width: 100%; /* Responsive image */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Optional: add rounded corners */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
-        }
-
-        /* Footer styling */
+        /* Footer styles */
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-            margin-top: 20px; /* Add margin above the footer */
         }
 
         /* Mobile responsiveness */
@@ -132,74 +119,39 @@
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="logo.png" alt="Proteek Huq Logo">
+                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a> <!-- Logo links to index -->
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About Me</a></li>
-                    <li><a href="../projects.html">Projects</a></li>
-                    <li><a href="../gallery.html">Gallery</a></li>
-                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+
+
     <main>
-        <article>
-            <h2>AI Think Tank Competition</h2>
-            <p><strong>Competition:</strong> UNSW AI Think Tank</p>
-            <p><strong>Project Focus:</strong> Cybersecurity, AI Solutions</p>
-            <p><strong>Role:</strong> Contributed as a Solutions Architect in collaboration with Sarah Lim and Tianyi Angela Lin</p>
-            <p><strong>Outcome:</strong> 1st Place</p>
-            <p>
-                I had the pleasure of presenting in the finalist round of the Artificial Intelligence Think Tank Case Competition,
-                organized by UNSW Capital W, UNSW Digital Society, and UNSW Women in Technology. 
-                I am proud to share that, in partnership with Sarah Lim and Tianyi Angela Lin, our team achieved 
-                <strong>First Place</strong> for our project: <em>Cyber Central</em>.
-            </p>
-            <p>
-                Cyber Central is a centralised cybersecurity attack simulator and training platform that leverages generative AI
-                to dispatch auto-generated and customizable phishing simulations. This solution enhances employee awareness and
-                resilience against phishing and malware attacks. 
-                It was a fantastic opportunity to apply academic knowledge and collaborate with like-minded individuals who share 
-                my passion for Artificial Intelligence and Cybersecurity.
-            </p>
-            
-            <h3>Project Highlights:</h3>
+        <section id="blogposts">
+            <h2>Blog Posts</h2>
             <ul>
-                <li>Won first place at the UNSW AI Think Tank Case Competition</li>
-                <li>Developed Cyber Central, a platform that provides realistic phishing simulations using AI</li>
-                <li>Contributed as a Solutions Architect in collaboration with Sarah Lim and Tianyi Angela Lin to present this innovative solution</li>
+                <li><a href="blogposts/Hiking Through Dalpura Canyon.html">Hiking Through Dalpura Canyon</a></li>
             </ul>
-        
-            <h3>Screenshots of the Cyber Central Prototype:</h3>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="prototype1.jpg" alt="Cyber Central Prototype Screenshot 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="prototype2.jpg" alt="Cyber Central Prototype Screenshot 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="prototype3.jpg" alt="Cyber Central Prototype Screenshot 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="prototype4.jpg" alt="Cyber Central Prototype Screenshot 4">
-                </div>
-            </div>
-        </article>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
