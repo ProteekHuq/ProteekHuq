@@ -11,7 +11,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
-        /* Global styles */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f9f9f9;
@@ -20,7 +19,6 @@
             padding: 0;
         }
 
-        /* Header styles */
         header {
             width: 100%;
         }
@@ -34,13 +32,13 @@
         }
 
         .logo img {
-            height: 40px; /* Adjusted height for the logo */
+            height: 40px;
             width: auto;
         }
 
         nav {
             flex: 1;
-            text-align: right; /* Align nav to the right */
+            text-align: right;
         }
 
         nav ul {
@@ -48,24 +46,23 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            justify-content: flex-end; /* Align items to the right */
+            justify-content: flex-end;
         }
 
         nav ul li {
-            margin: 0 15px; /* Adjusted margin for better spacing */
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 14px; /* Smaller font size for better fit on mobile */
+            font-size: 14px;
         }
 
-        /* Main content styles */
         main {
-            margin: 20px;
-            max-width: 800px; /* Restrict width for better readability */
-            padding: 0 20px; /* Padding to ensure content isn't against the edges */
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
         }
 
         section {
@@ -76,7 +73,6 @@
         }
 
         h2 {
-            text-align: left; /* Align heading to the left */
             font-size: 24px;
             margin-bottom: 10px;
         }
@@ -86,36 +82,37 @@
             margin: 5px 0;
         }
 
-        /* Footer styles */
+        .education, .experience {
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .experience li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .experience li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+            font-size: 20px;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .logo img {
-                height: 30px; /* Smaller logo on mobile */
-            }
-
-            nav ul {
-                justify-content: space-around; /* Evenly distribute items */
-            }
-
-            nav ul li {
-                margin: 0 3px; /* Reduced margin */
-            }
-
-            nav ul li a {
-                font-size: 12px; /* Smaller font size on mobile */
-            }
-
-            main {
-                margin: 10px; /* Reduced margin */
-                padding: 0 10px; /* Less padding on mobile */
-            }
         }
     </style>
 </head>
@@ -124,7 +121,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a> <!-- Logo links to index -->
+                <a href="index.html"><img src="images/logo.png" alt="Proteek Huq Logo"></a>
             </div>
             <nav>
                 <ul>
@@ -145,15 +142,20 @@
             <p><strong>Age:</strong> 20 years old</p>
             <p><strong>Location:</strong> Sydney, Australia</p>
             <p><strong>Hobbies:</strong> Hiking, Playing Minecraft, Travelling, Camping, Running, Art</p>
-            <p><strong>Education:</strong> <br> <strong><u>University of New South Wales</u></strong> <br> Bachelor's of Commerce (Marketing) and Information Systems</p>
-            <p><strong>Experience:</strong>
-                <br> <strong><u>Flight Centre Travel Group (FCTG)</u></strong>
-                <br> Marketing Intern <i>(Feb 2024 - Apr 2024)</i>
-                <br> <strong><u>Bridgeclimb Sydney</u></strong>
-                <br> Receptionist <i>(Dec 2023 - present)</i>
-                <br> <strong><u>Rec Alley Gymnastics Centre</u></strong>
-                <br> Receptionist <i>(Oct 2022 - Oct 2023)</i>
-            </p>
+            
+            <div class="education">
+                <p><strong>Education:</strong></p>
+                <p><strong><u>University of New South Wales</u></strong><br>Bachelor's of Commerce (Marketing) and Information Systems</p>
+            </div>
+            
+            <div class="experience">
+                <p><strong>Experience:</strong></p>
+                <ul>
+                    <li><strong><u>Flight Centre Travel Group (FCTG)</u></strong> – Marketing Intern <i>(Feb 2024 - Apr 2024)</i></li>
+                    <li><strong><u>Bridgeclimb Sydney</u></strong> – Receptionist <i>(Dec 2023 - present)</i></li>
+                    <li><strong><u>Rec Alley Gymnastics Centre</u></strong> – Receptionist <i>(Oct 2022 - Oct 2023)</i></li>
+                </ul>
+            </div>
         </section>
     </main>
 
