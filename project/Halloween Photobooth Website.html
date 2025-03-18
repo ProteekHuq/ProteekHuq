@@ -66,24 +66,24 @@
             max-width: 1200px; /* Center main content */
         }
 
-                /* Video styling */
+        /* Video styling */
         .video-container {
             margin-top: 20px;
             text-align: center; /* Center the video */
         }
 
         .video-container video {
-            max-width: 100%; /* Make video responsive */
+            width: 200px; /* Small initial size */
             height: auto; /* Maintain aspect ratio */
             border-radius: 8px; /* Optional: add rounded corners */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+            cursor: pointer; /* Indicate it's clickable */
+            transition: transform 0.3s ease; /* Smooth scaling animation */
         }
 
-        /* Constrain video size for mobile */
-        @media (max-width: 768px) {
-            .video-container video {
-                max-width: 90%; /* Reduce video width on mobile */
-            }
+        .video-container video.expanded {
+            width: 100%; /* Full width when expanded */
+            max-width: 800px; /* Limit maximum size */
         }
 
         /* e styling */
