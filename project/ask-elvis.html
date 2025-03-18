@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Elvis - Figma Prototype</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            width: 100%;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .logo img {
+            height: 40px; /* Adjusted height for the logo */
+            width: auto;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right; /* Align nav to the right */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-end; /* Align items to the right */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Adjusted margin for better spacing */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px; /* Smaller font size for better fit on mobile */
+        }
+
+        /* Main content styling */
+        main {
+            margin: 20px auto; /* Add margin to main content */
+            max-width: 1200px; /* Center main content */
+        }
+
+        /* Article styling */
+        article {
+            margin-bottom: 30px; /* Add margin below each article */
+            padding: 20px; /* Add padding for inner spacing */
+            background-color: white; /* Optional: to enhance visibility */
+            border-radius: 8px; /* Optional: add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+        }
+
+        h1, h2 {
+            color: #444;
+            text-align: center;
+        }
+
+        /* Video styling */
+        .video-container {
+            margin-top: 20px;
+            text-align: center; /* Center the video */
+        }
+
+        .video-container iframe {
+            width: 100%; /* Full width */
+            max-width: 800px; /* Limit maximum size */
+            height: 450px; /* Fixed height for desktop */
+            border-radius: 8px; /* Optional: add rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo img {
+                height: 30px; /* Smaller logo on mobile */
+            }
+
+            nav ul {
+                justify-content: space-around; /* Evenly distribute items */
+            }
+
+            nav ul li {
+                margin: 0 3px; /* Reduced margin */
+            }
+
+            nav ul li a {
+                font-size: 12px; /* Smaller font size on mobile */
+            }
+
+            main {
+                margin: 10px; /* Reduced margin */
+                padding: 0 10px; /* Less padding on mobile */
+            }
+
+            .video-container iframe {
+                height: 250px; /* Smaller height for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html"><img src="logo.png" alt="Proteek Huq Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>Ask Elvis - Figma Prototype</h2>
+            <p><strong>Project:</strong> A team consulting project to simplify the pension application process for senior citizens.</p>
+
+            <!-- Video section -->
+            <div class="video-container">
+                <h3>Prototype Walkthrough:</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tQ4D0xBMeXo?si=aDzMibKp7TyH-49b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h3>Description:</h3>
+            <p>
+                "Ask Elvis" is a Figma-based prototype designed to make the pension application process easier and more accessible for senior citizens. This project was a team effort where we followed <strong>human-centered design principles</strong> to address the challenges faced by pensioners. We conducted interviews with pensioners to understand their user journey and pain points, which informed our redesign of the pension information resources and application platform.
+            </p>
+            <p>
+                Our solution, <strong>Ask Elvis</strong>, integrates a digital AI assistant into a user-friendly website. The assistant helps users navigate the pension system, answers their questions, and provides support during the application process. It also assists users in understanding complex questions in the application form, making the process more intuitive for older adults.
+            </p>
+
+            <!-- Skills developed section -->
+            <h3>Skills Developed:</h3>
+            <ul>
+                <li>Human-Centered Design</li>
+                <li>User Research & Interviews</li>
+                <li>Figma Prototyping</li>
+                <li>UI/UX Design</li>
+                <li>Team Collaboration</li>
+            </ul>
+
+            <h3>Outcome:</h3>
+            <p>
+                The outcome was a highly user-friendly and feasible solution that impressed our clients. The prototype effectively addressed the pain points of senior citizens, making the pension application process more accessible and less intimidating.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proteek Huq. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
