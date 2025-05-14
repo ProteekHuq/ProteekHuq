@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Accent color for hover */
+    color: #ffcc00;
 }
 
 /* Logo styling */
@@ -51,10 +51,9 @@ nav ul li a:hover {
     width: auto;
 }
 
-/* Main content styling */
+/* Main content styling - No box around the content */
 main {
-    margin: 40px auto;
-    max-width: 1100px;
+    margin: 40px;
     padding: 0 20px;
 }
 
@@ -64,6 +63,8 @@ section {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Let the content fill the screen width */
+    width: auto; /* Allow natural width */
 }
 
 h1, h2 {
@@ -75,7 +76,7 @@ h1, h2 {
 
 /* Contact form styling */
 form {
-    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -102,57 +103,65 @@ form button:hover {
     background-color: #555;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     color: #777; /* Lighter gray for less prominence */
     font-size: 12px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Header Styling Adjustments */
     .header-container {
-        flex-direction: row; /* Keep items in a row */
-        justify-content: space-between; /* Space between logo and nav */
+        flex-direction: column; /* Stack the header items vertically */
+        justify-content: center;
+        padding: 20px;
     }
 
     nav ul {
-        flex-direction: row; /* Keep nav items horizontal */
-        justify-content: center;
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
-        white-space: nowrap; /* Prevent line wrapping */
+        flex-direction: column; /* Stack the nav items vertically on mobile */
+        align-items: center;
+        padding: 0;
     }
 
     nav ul li {
-        margin: 0 10px; /* Reduced spacing for smaller screens */
+        margin: 10px 0; /* Reduce the spacing between nav items */
     }
 
     .logo img {
-        margin-bottom: 0; /* Remove extra margin on mobile */
+        width: 50%; /* Reduce logo size for mobile */
+        margin-bottom: 10px; /* Add spacing below the logo */
     }
 
+    /* Section Styling Adjustments */
     section {
         padding: 15px;
     }
 
     h1, h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Make headings smaller on mobile */
     }
 
+    /* Form Styling Adjustments */
     form input, form textarea {
         padding: 10px;
+        font-size: 16px; /* Adjust input font size for better readability */
     }
 
     form button {
-        width: 100%;
+        width: 100%; /* Make button full width */
         padding: 12px;
     }
 
+    /* Footer Styling Adjustments */
     footer {
-        font-size: 12px;
+        font-size: 12px; /* Smaller font size */
+        padding: 10px 20px; /* Reduce padding to make it less noticeable */
+        position: static; /* Footer stays at the bottom of the content */
     }
 }
