@@ -102,13 +102,15 @@ form button:hover {
     background-color: #555;
 }
 
-/* Footer styling */
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #333;
-    color: white;
-    font-size: 14px;
+    padding: 10px;
+    color: #777; /* Lighter gray for less prominence */
+    font-size: 12px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 }
 
 /* Mobile responsiveness */
