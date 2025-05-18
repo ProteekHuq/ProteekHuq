@@ -76,10 +76,13 @@ p {
 
 /* Footer styles */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+  background: none; /* Removes background color */
+  border: none;     /* Removes any borders */
+  padding: 0.5rem;  /* Optional: small padding for spacing */
+  text-align: left;
+  color: grey;
+  font-size: 0.8rem; /* Smaller text */
+  box-shadow: none; /* Removes any shadow effects */
 }
 
 /* Resume Section Styles */
